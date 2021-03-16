@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Compair</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="global/reset.css">
+    <link rel="stylesheet" href="global/base.css">
+    <link rel="stylesheet" href="components/input.css">
+    <link rel="stylesheet" href="components/containers.css">
+    <link rel="stylesheet" href="components/comparaPokemon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pokemon Vs. Pokemon</h1>
+
+        <div class="container-comparador">
+            <div class="container-pokemon">
+                <div class="container_input">
+                    <input type="text" class="novaTarefa" placeholder="Novo pokemon...">
+                    <button class="btn-pkm" type="button" id="firstPokemon" onclick="adicionarPokemon(this.id)">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <button class="btn-pkm" type="button" id="deleteFirstPokemon" onclick="deletarPokemon(this.id)">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </div>
+        
+                <div class="container_cards-tarefas">
+                    <ul class="first-ul-pkm"></ul>
+                </div>
+            </div>
+    
+            <div class="container-pokemon">
+                <div class="container_input">
+                    <input type="text" class="novaTarefa" placeholder="Novo pokemon...">
+                    <button class="btn-pkm" type="button" id="secondPokemon" onclick="adicionarPokemon(this.id)">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <button class="btn-pkm" type="button" id="deleteSecondPokemon" onclick="deletarPokemon(this.id)">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </div>
+        
+                <div class="container_cards-tarefas">
+                    <ul class="second-ul-pkm"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="scripts/deletePokemon.js"></script>
+    <script src="scripts/addPokemon.js"></script>
+</body>
+</html>

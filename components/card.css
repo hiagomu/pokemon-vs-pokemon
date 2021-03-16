@@ -1,0 +1,6 @@
+.card {
+    display: block;
+    margin: 0 auto;
+    color: black;
+    border: 1px solid #ff6f47;
+}

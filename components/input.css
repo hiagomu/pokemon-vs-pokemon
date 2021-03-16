@@ -1,0 +1,30 @@
+input {
+    width: 240px;
+    height: 30px;
+    font-size: 18px;
+    padding: 0.6rem;
+    border: 1px solid #ff6f47;;
+    background: white;
+}
+
+.container_input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.btn-pkm {
+    height: 30px;
+    padding: 2px 4px;
+    border: none;
+    outline: white;
+    background: #ff6f47;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-pkm:hover {
+    color: #ff6f47;
+    background: #f7fffe;
+}
