@@ -13,5 +13,21 @@
 .container-comparador {
     display: flex;
     justify-content: space-around;
-    margin: 30px 0;
+    margin: 30px 0 0;
+    height: 425px;
+}
+
+.container-atribute-points {
+    width: 300px;
+    height: 10px;
+
+    background-color: white;
+
+    margin: 10px auto 0;
+}
+
+span {
+    display: block;
+    height: 100%;
+    background-color: aquamarine;
 }

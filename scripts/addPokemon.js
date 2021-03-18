@@ -7,14 +7,15 @@ function adicionarPokemon(btnId) {
     if (btnId === "firstPokemon" && ulPokemonFirst.innerHTML == "") {
         createCard(inputTarefa[0].value.toLowerCase(), ulPokemonFirst);
         inputTarefa[0].value = "";
-    } 
+    }
     
     if (btnId === "secondPokemon" && ulPokemonSecond.innerHTML == "") {
         createCard(inputTarefa[1].value.toLowerCase(), ulPokemonSecond);
         inputTarefa[1].value = "";
     }
-
 }
+
+
 
 function createCard(name, ul) {
 
@@ -22,7 +23,7 @@ function createCard(name, ul) {
         .then(stats => {
 
             const li = document.createElement('li');
-    
+            
             li.innerHTML = 
             `
             <div class="card" style="width: 18rem;">
@@ -32,9 +33,9 @@ function createCard(name, ul) {
                     <p class="card-text">NULL</p>
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">HP: ${stats.hp}</li>
-                    <li class="list-group-item">Attack: ${stats.attack}</li>
-                    <li class="list-group-item">Defense: ${stats.defense}</li>
+                    <li class="list-group-item" value=${stats.hp}>HP: ${stats.hp}</li>
+                    <li class="list-group-item" value=${stats.attack}>Attack: ${stats.attack}</li>
+                    <li class="list-group-item" value=${stats.defense}>Defense: ${stats.defense}</li>
                 </ul>
             </div>
             `

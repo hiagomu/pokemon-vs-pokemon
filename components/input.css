@@ -28,3 +28,13 @@ input {
     color: #ff6f47;
     background: #f7fffe;
 }
+
+.btn-bar-pts {
+    display: block;
+    
+    margin: 10px auto 0;
+    height: 24px;
+    width: 80px;
+
+    font-weight: bold;
+}
